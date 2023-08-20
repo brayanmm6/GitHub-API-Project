@@ -1,0 +1,6 @@
+@media(max-width: 768px){
+    #github-user-name,
+    #github-user-name-submit{
+        width: 100%;
+    }
+}
