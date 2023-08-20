@@ -1,8 +1,10 @@
 <h1>Projeto Usando a API do GitHub</h1>
 
 <h2>Tecnologias</h2>
-
-<li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API</a>
+<li><i class="devicon-html5-plain colored"></i></li>
+    <li><i class="devicon-css3-plain colored"></i></li>
+    <li><i class="devicon-javascript-plain colored"></i></li>
+    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <i class="devicon-github-original colored"></i></a></li>
 
 <section class="description">
     <h3>Descrição</h3>
