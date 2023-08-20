@@ -3,7 +3,7 @@
 <h2>Tecnologias</h2>
 <li><i class="devicon-html5-plain colored"></i></li>
     <li><i class="devicon-css3-plain colored"></i></li>
-    <li><i class="devicon-javascript-plain colored"></i></li>
+    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></li>
     <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <i class="devicon-github-original colored"></i></a></li>
 
 <section class="description">
