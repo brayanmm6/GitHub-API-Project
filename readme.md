@@ -1,10 +1,10 @@
 <h1>Projeto Usando a API do GitHub</h1>
 
 <h2>Tecnologias</h2>
-<li><i class="devicon-html5-plain colored"></i></li>
-    <li><i class="devicon-css3-plain colored"></i></li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="100px"/></li>
-    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <i class="devicon-github-original colored"></i></a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px"/></li>
+<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80px"/></li>
+<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px"/></li>
+<li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80px"/></a></li>
 
 <section class="description">
     <h3>Descrição</h3>
