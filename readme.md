@@ -1,7 +1,7 @@
 <h1>Projeto Usando a API do GitHub</h1>
 
 <h2>Tecnologias</h2>
-[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,wasm)](https://skills.thijs.gg)
+
 <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API</a>
 
 <section class="description">
