@@ -2,10 +2,10 @@
 
 <h2>Tecnologias</h2>
 <ul>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=html)](https://skills.thijs.gg)</li>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=css)](https://skills.thijs.gg)</li>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg)</li>
-    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API</a></li>
+    <li><i class="devicon-html5-plain colored"></i></li>
+    <li><i class="devicon-css3-plain colored"></i></li>
+    <li><i class="devicon-javascript-plain colored"></i></li>
+    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <i class="devicon-github-original colored"></i></a></li>
 </ul>
 
 <section class="description">
