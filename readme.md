@@ -2,10 +2,10 @@
 
 <h2>Tecnologias</h2>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80px"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px"/>
-<a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <img     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80px"/></a>     
+<span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px"/></span>
+<span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80px"/></span>
+<span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px"/></span>
+<span><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <img     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80px"/></a></span>     
 
 <section class="description">
     <h3>Descrição</h3>
