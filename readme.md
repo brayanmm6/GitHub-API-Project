@@ -1,12 +1,8 @@
 <h1>Projeto Usando a API do GitHub</h1>
 
 <h2>Tecnologias</h2>
-<ul>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=html)](https://skills.thijs.gg)</li>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=css)](https://skills.thijs.gg)</li>
-    <li>[![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg)</li>
-    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API</a></li>
-</ul>
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,wasm)](https://skills.thijs.gg)
+<li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API</a>
 
 <section class="description">
     <h3>Descrição</h3>
