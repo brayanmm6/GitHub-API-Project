@@ -1,12 +1,11 @@
 <h1>Projeto Usando a API do GitHub</h1>
 
 <h2>Tecnologias</h2>
-<ul style="display: flex;">
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px"/></li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80px"/></li>
-    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px"/></li>
-    <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <img     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80px"/></a></li>       
-</ul>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="80px"/>
+<a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">GitHub REST API <img     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="80px"/></a>     
 
 <section class="description">
     <h3>Descrição</h3>
