@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
+    <header class="top">
+        <input type="checkbox" name="night-mode" id="night-mode">
+        <label for="night-mode">
+            <div class="slide-body">
+                <div class="circle"></div>
+            </div>
+        </label>
+    </header>
     <main>
         <i class="devicon-github-original"></i>
-
         <div class="search-user-container">
-            <header>
+            <header class="search">
                 <h2>Buscar Usuário</h2>
-                <input type="text" placeholder="Digite o nome do usuário no GitHub" id="github-user-name">
+                <input type="text" placeholder="Digite o nome do usuário no GitHub" id="github-user-name" required>
                 <button type="submit" id="github-user-name-submit">Buscar</button>
             </header>
 

@@ -10,7 +10,13 @@ const screen = {
                                                 <img src=${userData.avatar} alt="foto de perfil do usuário.">   
                                                 <div class="data">
                                                     <h1>${userData.name ?? "Não possui nome cadastrado!"}</h1>
+                                                    <a href="${userData.profileUrl}" target="_blank" class="profile-link">${userData.userName}</a>
                                                     <p>${userData.bio ?? "Não possui bio no perfil do usuário!"}</p>
+
+                                                    <footer class="followers-and-following">
+                                                        <p class="followers">Seguidores: ${userData.followers} </p>
+                                                        <p class="following">Seguindo: ${userData.following}</p>
+                                                    </footer>
                                                 </div>
                                             </div>`
         }
@@ -33,6 +39,21 @@ const screen = {
                                                 <h2>Repositórios</h2>
                                                 <ul>${repositorieItens}</ul> 
                                             </div>`
+    },
+
+    userEvents: document.querySelector(".profile-data"),
+    renderEvents(eventsData){
+        if(eventsData === false) return
+        let events = ""
+        eventsData.forEach(eachEvent => {
+            events += `<li><h4>${eachEvent.eventName}</h4> ~ <span class="last-event">${eachEvent.commits[0].message}</span></li>` 
+        })
+        this.userEvents.innerHTML += `  <div class="user-events">
+                                            <h2>Eventos</h2>
+                                            <ul class="user-events-items">
+                                                ${events}
+                                            </ul>
+                                        </div>`
     }
 } 
 

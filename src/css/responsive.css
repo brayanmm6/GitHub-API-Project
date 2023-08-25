@@ -3,4 +3,18 @@
     #github-user-name-submit{
         width: 100%;
     }
+
+    .profile-data .info{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-data .info img{
+        width: 100%;
+    }
+
+    .repositories ul li{
+        width: 100%;
+    }
+
 }

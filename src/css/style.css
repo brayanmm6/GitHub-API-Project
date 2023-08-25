@@ -91,40 +91,42 @@ header input{
 }
 
 .info img{
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     border: solid 5px hotpink;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .repositories{
     margin-top: 20px;
     padding-block: 20px;
-    border-radius: 10px;
 }
 
 .repositories h2{
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .repositories ul{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 15px;
 }
 
 .repositories ul li{
-    margin: 10px;
+    display: flex;
+    width: auto;
+    height: auto;
 }
 
 .repositories ul li a{
-    background-color: rgba(222, 222, 222, 0.4);
-    padding: 10px;
-    border: solid 0.5px grey;
-    border-radius: 7px;
+    width: 100%;
+    background-color: rgba(222, 222, 222, 0.4); 
+    padding: 15px;
+    border: 0.5px solid grey;
+    border-radius: 15px;
 }
 
 .repositories ul li a:hover{
@@ -137,6 +139,115 @@ header input{
 }
 
 .error-highlight{
-    border: solid 0.5px red;
+    border: 0.5px solid red;
     outline-color: red;
+}
+
+.followers-and-following{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.followers-and-following .followers{
+    background-color: hotpink;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.followers-and-following .following{
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.profile-link{
+    background-color: #9275c7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px;
+    align-self: center;
+}
+
+.profile-link:hover{
+    background-color: hotpink;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+/* 
+Night Mode 
+*/
+.top{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+#night-mode{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.slide-body{
+    width: 80px;
+    height: 35px;
+    background-color: #9275c7;
+    border-radius: 30px;
+    padding-inline: 3px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.slide-body .circle{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#night-mode:checked ~ label .slide-body .circle{
+    translate: 44px;
+    background-color: hotpink;
+}
+
+#night-mode:checked ~ label .slide-body{
+    background-color: grey;
+}
+
+/*
+////////////////////////////////////////
+            EVENTOS
+//////////////////////////////////////
+*/
+
+.user-events{
+    padding: 20px;
+    background-color: rgba(146, 117, 199, 0.4);
+    border-radius: 20px;    
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.user-events-items{
+    padding: 10px;
+    width: 100%;
+}
+
+.user-events-items li{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.last-event{
+    color: hotpink;
 }
