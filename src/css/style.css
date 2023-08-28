@@ -179,7 +179,9 @@ header input{
 }
 
 /* 
-Night Mode 
+////////////////////////////////////////////////
+            NIGHT MODE
+////////////////////////////////////////////////
 */
 .top{
     display: flex;
@@ -225,7 +227,7 @@ label{
 
 /*
 ////////////////////////////////////////
-            EVENTOS
+            EVENTS
 //////////////////////////////////////
 */
 
@@ -246,8 +248,24 @@ label{
     display: flex;
     justify-content: center;
     gap: 10px;
+    border-bottom: 0.5px solid hotpink;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: default;
 }
 
 .last-event{
-    color: hotpink;
+    color: grey;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.last-event:before{
+    content: "~ ";
+}
+
+.user-events-items li:hover .last-event{
+    -webkit-line-clamp: initial;
 }

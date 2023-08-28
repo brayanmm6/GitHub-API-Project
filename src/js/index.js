@@ -21,13 +21,11 @@ async function getUserData (userName) {
     const userRepositoriesResponse = await getRepositories(userName)
     const userEventsResponse = await getEvents(userName)
 
-
     user.setInfo(userNameResponse)
     user.setRepositories(userRepositoriesResponse)
     userEvents.setEvents(userEventsResponse)
     screen.renderUser(user)
     screen.renderRepositories(user.repositories)
-
     screen.renderEvents(userEvents.events)
 }
 

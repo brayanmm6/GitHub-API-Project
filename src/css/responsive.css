@@ -17,4 +17,7 @@
         width: 100%;
     }
 
+    .user-events-items li{
+        flex-direction: column;
+    }
 }

@@ -46,7 +46,7 @@ const screen = {
         if(eventsData === false) return
         let events = ""
         eventsData.forEach(eachEvent => {
-            events += `<li><h4>${eachEvent.eventName}</h4> ~ <span class="last-event">${eachEvent.commits[0].message}</span></li>` 
+            events += `<li><h4>${eachEvent.repoName}</h4><span class="last-event">${eachEvent.commits}</span></li>` 
         })
         this.userEvents.innerHTML += `  <div class="user-events">
                                             <h2>Eventos</h2>
