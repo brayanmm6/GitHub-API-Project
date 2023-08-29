@@ -5,11 +5,13 @@ body{
     font-family: "Kumbh Sans", sans-serif; 
     background-color: #24292e;
     padding: 0 25px;
+    transition: 0.5s ease-in-out;
 }
 
 .devicon-github-original{
     font-size: 60px;
     color: #fff;
+    transition: 0.5s ease-in-out;
 }
 
 main{
@@ -32,6 +34,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
 .search-user-container header{
@@ -198,8 +201,8 @@ label{
 }
 
 .slide-body{
-    width: 80px;
-    height: 35px;
+    width: 60px;
+    height: 25px;
     background-color: #9275c7;
     border-radius: 30px;
     padding-inline: 3px;
@@ -209,20 +212,39 @@ label{
 }
 
 .slide-body .circle{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-color: #fff;
     border-radius: 50%;
     transition: 0.5s;
 }
 
 #night-mode:checked ~ label .slide-body .circle{
-    translate: 44px;
-    background-color: hotpink;
+    translate: 34px;
+    background-color: #9275c7;
 }
 
 #night-mode:checked ~ label .slide-body{
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.night-mode-on-body{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.night-mode-on-card{
+    background-color: #24292e;
+    color: #fff;
+}
+
+.night-mode-on-icon{
+    color: #24292e;
+}
+
+.night-mode-on-input{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: #fff;
 }
 
 /*

@@ -5,9 +5,12 @@ import { screen } from "./objects/screen.js"
 import { checkInputContent } from "./validations.js";
 import { getEvents } from "./services/events.js"
 import { userEvents } from "./objects/events.js"
+import { nightMode } from "./night_mode.js";
 
 const searchButton = document.getElementById("github-user-name-submit")
 const userInput = document.getElementById("github-user-name")
+
+nightMode()
 
 async function getUserData (userName) {
     const userNameResponse = await getUser(userName)
