@@ -6,6 +6,7 @@ import { checkInputContent } from "./validations.js";
 import { getEvents } from "./services/events.js"
 import { userEvents } from "./objects/events.js"
 import { nightMode } from "./night_mode.js";
+import { repositoriesMoreInfosToShow } from "./objects/repositories.js";
 
 const searchButton = document.getElementById("github-user-name-submit")
 const userInput = document.getElementById("github-user-name")
@@ -30,6 +31,7 @@ async function getUserData (userName) {
     screen.renderUser(user)
     screen.renderRepositories(user.repositories)
     screen.renderEvents(userEvents.events)
+    screen.renderRepositoriesMoreInfos(await repositoriesMoreInfosToShow(userName))
 }
 
 searchButton.addEventListener("click", () => {

@@ -13,11 +13,22 @@
         width: 100%;
     }
 
-    .repositories ul li{
+    .repositories ul .repositorie-item{
         width: 100%;
     }
 
     .user-events-items li{
         flex-direction: column;
+    }
+
+    .more-infos .language{
+        max-width: 100%;
+    }
+
+    .more-infos .language:hover{
+        color: initial;
+        background-color: initial;
+        border: initial;
+        padding-inline: initial;
     }
 }

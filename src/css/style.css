@@ -118,23 +118,75 @@ header input{
     gap: 15px;
 }
 
-.repositories ul li{
+.repositories ul .repositorie-item{
     display: flex;
-    width: auto;
+    justify-content: center;
+    align-items: center; 
+    min-width: 200px;
     height: auto;
+    position: relative;
 }
 
-.repositories ul li a{
+.repositories ul .repositorie-item a{
     width: 100%;
     background-color: rgba(222, 222, 222, 0.4); 
-    padding: 15px;
+    padding: 20px;
     border: 0.5px solid grey;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.repositories ul .repositorie-item a:hover{
+    background-color: hotpink;
+    color: #fff;
+    z-index: 1;
+    border-radius: 15px;
+    margin-bottom: 22px;
+}
+
+.repositories ul .repositorie-item a:hover ~ .more-infos{
     border-radius: 15px;
 }
 
-.repositories ul li a:hover{
+.more-infos{
+    gap: 5px;
+    background-color: #9275c7;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 20px;
+    padding-inline: 10px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.more-infos p{
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.more-infos p:hover{
     background-color: hotpink;
+    border: solid 0.5px grey;
     color: #fff;
+    z-index: 1;
+    overflow: visible;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
 }
 
 .error-message{
@@ -282,6 +334,8 @@ label{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    transition: 0.3s ease-in-out;
+    
 }
 
 .last-event:before{
@@ -290,4 +344,8 @@ label{
 
 .user-events-items li:hover .last-event{
     -webkit-line-clamp: initial;
+    background-color: #9275c7;
+    color: #fff;
+    border-radius: 25px;
+    padding-inline: 10px;
 }
