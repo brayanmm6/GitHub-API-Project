@@ -35,7 +35,7 @@ async function getUserData (userName) {
 }
 
 searchButton.addEventListener("click", () => {
-    if(userInput.value.length == 0){
+    if(userInput.value.length === 0){
         checkInputContent(false)
         userInput.classList.add("error-highlight")
         return
@@ -50,7 +50,7 @@ userInput.addEventListener("keypress", (e) => {
     const userName = e.target.value
     const keyPressed = key === 13
     if(keyPressed && key === 13){
-        if(userInput.value.length == 0){
+        if(userInput.value.length === 0){
             checkInputContent(false)
             userInput.classList.add("error-highlight")
             return

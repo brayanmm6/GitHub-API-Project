@@ -31,8 +31,6 @@ const screen = {
             return
         }
 
-        
-
         let repositorieItens = ""
         repositoriesData.forEach(repositorie => {
             repositorieItens += `<li class="repositorie-item"><a href="${repositorie.html_url}" target="_blank">${repositorie.name}</a></li>`
@@ -71,7 +69,6 @@ const screen = {
         }
     }
 
-    
 } 
 
 export { screen }
