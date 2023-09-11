@@ -28,13 +28,13 @@
 
 <section class="screenshots">
     <h2>Desktop:</h2>
-    <img href="./src/images/readme-images/desktop-1.png" alt="Desktop image.">
-    <img href="./src/images/readme-images/desktop-2.png" alt="Desktop image.">
+    <img src="./src/images/readme-images/desktop-1.png" alt="Desktop image.">
+    <img src="./src/images/readme-images/desktop-2.png" alt="Desktop image.">
     <h2>Mobile:</h2>
-    <img href="./src/images/readme-images/mobile-1.png" alt="Mobile image.">
-    <img href="./src/images/readme-images/mobile-2.png" alt="Mobile image.">
-    <img href="./src/images/readme-images/mobile-3.png" alt="Mobile image.">
-    <img href="./src/images/readme-images/mobile-4.png" alt="Mobile image.">
+    <img src="./src/images/readme-images/mobile-1.png" alt="Mobile image.">
+    <img src="./src/images/readme-images/mobile-2.png" alt="Mobile image.">
+    <img src="./src/images/readme-images/mobile-3.png" alt="Mobile image.">
+    <img src="./src/images/readme-images/mobile-4.png" alt="Mobile image.">
 </section>
 
 <footer>
