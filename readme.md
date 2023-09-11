@@ -24,7 +24,18 @@
     <li><p>Os 10 últimos eventos de Push e Create (a quantidade de eventos também pode ser alterada no mesmo arquivo do anterior. Para mostrar outros tipos de eventos será necessário também criar um novo case no switch do objeto "userEvents" em objects.).</p></li>
 </ul>
     
-<hr></hr> 
+<hr></hr>
+
+<section class="screenshots">
+    <h2>Desktop:</h2>
+    <img href="./src/images/readme-images/desktop-1.png" alt="Desktop image.">
+    <img href="./src/images/readme-images/desktop-2.png" alt="Desktop image.">
+    <h2>Mobile:</h2>
+    <img href="./src/images/readme-images/mobile-1.png" alt="Mobile image.">
+    <img href="./src/images/readme-images/mobile-2.png" alt="Mobile image.">
+    <img href="./src/images/readme-images/mobile-3.png" alt="Mobile image.">
+    <img href="./src/images/readme-images/mobile-4.png" alt="Mobile image.">
+</section>
 
 <footer>
     <p>Espero que gostem 😊!</p>
