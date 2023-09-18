@@ -44,7 +44,13 @@ const screen = {
 
     userEvents: document.querySelector(".profile-data"),
     renderEvents(eventsData){
-        if(eventsData === false) return
+        if(eventsData === false) {
+            this.userEvents.innerHTML += `  <div class="user-events">
+                                                <h3>Sem eventos para exibir!</h3>
+                                            </div>`
+            return
+        }
+        
         let events = ""
         eventsData.forEach(eachEvent => {
             events += `<li><h4>${eachEvent.repoName}</h4><span class="last-event">${eachEvent.commits}</span></li>` 
@@ -58,17 +64,24 @@ const screen = {
     },
 
     repositorieItem: document.getElementsByClassName("repositorie-item"),
-    renderRepositoriesMoreInfos(repositorie){
-        for (let cont = 0; cont < this.repositorieItem.length; cont += 1){
-            this.repositorieItem[cont].innerHTML += `<div class="more-infos">
-                                                        <p class="info-counter">🍴${repositorie[cont].network_count}</p>
-                                                        <p class="info-counter">⭐${repositorie[cont].stargazers_count}</p>
-                                                        <p class="info-counter">👀${repositorie[cont].watchers_count}</p>
-                                                        <p class="language">👩‍💻${repositorie[cont].language ?? "Indefinida."}</p>
-                                                     </div>`
-        }
+    async renderRepositoriesMoreInfos(repositorieData){
+        repositorieData.forEach( async ( repositorie, index ) => {
+            let cont = 0
+            const nameOnHtml = this.repositorieItem[index].outerText
+            repositorieData.find( item => {
+                if(item.name !== nameOnHtml) {
+                    cont += 1
+                } else if (item.name === nameOnHtml){
+                    this.repositorieItem[index].innerHTML += `  <div class="more-infos">
+                                                                    <p class="info-counter">🍴${repositorieData[cont].network_count}</p>
+                                                                    <p class="info-counter">⭐${repositorieData[cont].stargazers_count}</p>
+                                                                    <p class="info-counter">👀${repositorieData[cont].watchers_count}</p>
+                                                                    <p class="language">👩‍💻${repositorieData[cont].language ?? "Indefinida."}</p>
+                                                                </div>`
+                } 
+            })
+        })
     }
-
 } 
 
 export { screen }

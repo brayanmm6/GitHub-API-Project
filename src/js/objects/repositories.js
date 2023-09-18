@@ -1,8 +1,9 @@
-import { repositoriesData } from "../repositories.js"
+const repositoriesMoreInfosToShow = {
+    repositoriesMoreInfos: [],
 
-async function repositoriesMoreInfosToShow (userName) {
-    const repositoriesMoreInfos = await repositoriesData(userName)
-    return repositoriesMoreInfos
+    setInfos(repositorieData){
+        this.repositoriesMoreInfos = repositorieData
+    }
 }
 
 export { repositoriesMoreInfosToShow }
