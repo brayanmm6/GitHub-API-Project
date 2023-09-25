@@ -2,11 +2,11 @@
 *.log 
 
 #ignore the folder of nodules
-node_modules
+/node_modules
 
 #ignore all json files
 *.json
 
-
+*.gitignore
 
 
