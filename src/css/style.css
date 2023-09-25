@@ -5,11 +5,13 @@ body{
     font-family: "Kumbh Sans", sans-serif; 
     background-color: #24292e;
     padding: 0 25px;
+    transition: 0.5s ease-in-out;
 }
 
 .devicon-github-original{
     font-size: 60px;
     color: #fff;
+    transition: 0.5s ease-in-out;
 }
 
 main{
@@ -32,6 +34,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
 .search-user-container header{
@@ -91,45 +94,99 @@ header input{
 }
 
 .info img{
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     border: solid 5px hotpink;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .repositories{
     margin-top: 20px;
     padding-block: 20px;
-    border-radius: 10px;
 }
 
 .repositories h2{
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .repositories ul{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 15px;
 }
 
-.repositories ul li{
-    margin: 10px;
+.repositories ul .repositorie-item{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-width: 200px;
+    height: auto;
+    position: relative;
 }
 
-.repositories ul li a{
-    background-color: rgba(222, 222, 222, 0.4);
-    padding: 10px;
-    border: solid 0.5px grey;
-    border-radius: 7px;
+.repositories ul .repositorie-item a{
+    width: 100%;
+    background-color: rgba(222, 222, 222, 0.4); 
+    padding: 20px;
+    border: 0.5px solid grey;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
 }
 
-.repositories ul li a:hover{
+.repositories ul .repositorie-item a:hover{
     background-color: hotpink;
     color: #fff;
+    z-index: 1;
+    border-radius: 15px;
+    margin-bottom: 22px;
+}
+
+.repositories ul .repositorie-item a:hover ~ .more-infos{
+    border-radius: 15px;
+}
+
+.more-infos{
+    gap: 5px;
+    background-color: #9275c7;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 20px;
+    padding-inline: 10px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.more-infos p{
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.more-infos p:hover{
+    background-color: hotpink;
+    border: solid 0.5px grey;
+    color: #fff;
+    z-index: 1;
+    overflow: visible;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
 }
 
 .error-message{
@@ -137,6 +194,158 @@ header input{
 }
 
 .error-highlight{
-    border: solid 0.5px red;
+    border: 0.5px solid red;
     outline-color: red;
+}
+
+.followers-and-following{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.followers-and-following .followers{
+    background-color: hotpink;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.followers-and-following .following{
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.profile-link{
+    background-color: #9275c7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px;
+    align-self: center;
+}
+
+.profile-link:hover{
+    background-color: hotpink;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+/* 
+////////////////////////////////////////////////
+            NIGHT MODE
+////////////////////////////////////////////////
+*/
+.top{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+#night-mode{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.slide-body{
+    width: 60px;
+    height: 25px;
+    background-color: #9275c7;
+    border-radius: 30px;
+    padding-inline: 3px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.slide-body .circle{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#night-mode:checked ~ label .slide-body .circle{
+    translate: 34px;
+    background-color: #9275c7;
+}
+
+#night-mode:checked ~ label .slide-body{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.night-mode-on-body{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.night-mode-on-card{
+    background-color: #24292e;
+    color: #fff;
+}
+
+.night-mode-on-icon{
+    color: #24292e;
+}
+
+.night-mode-on-input{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: #fff;
+}
+
+/*
+////////////////////////////////////////
+            EVENTS
+//////////////////////////////////////
+*/
+
+.user-events{
+    padding: 20px;
+    background-color: rgba(146, 117, 199, 0.4);
+    border-radius: 20px;    
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.user-events-items{
+    padding: 10px;
+    width: 100%;
+}
+
+.user-events-items li{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 0.5px solid hotpink;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: default;
+}
+
+.last-event{
+    color: grey;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.last-event:before{
+    content: "~ ";
+}
+
+.user-events-items li:hover .last-event{
+    -webkit-line-clamp: initial;
+    background-color: #9275c7;
+    color: #fff;
+    border-radius: 25px;
+    padding-inline: 10px;
 }

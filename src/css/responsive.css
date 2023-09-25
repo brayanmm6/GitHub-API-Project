@@ -3,4 +3,29 @@
     #github-user-name-submit{
         width: 100%;
     }
+
+    .profile-data .info{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-data .info img{
+        width: 100%;
+    }
+
+    .repositories ul .repositorie-item{
+        width: 100%;
+    }
+
+    .user-events-items li{
+        flex-direction: column;
+    }
+
+    .more-infos p{
+        text-align: center;
+    }
+
+    .more-infos p:hover{
+        width: 100%;
+    }
 }
