@@ -7,6 +7,6 @@
 #ignore all json files
 *.json
 
-*.gitignore
+.gitignore
 
 
