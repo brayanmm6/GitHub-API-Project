@@ -3,7 +3,7 @@ function checkInputContent (input) {
 }
 
 function checkArrayLength (item){
-    if(item.length === 0) return false // item's empty
+    if(item.length === 0) return false // item vazio
 }
 
 function checkAllValuesEquality (...items) {

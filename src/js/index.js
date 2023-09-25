@@ -7,6 +7,7 @@ import { getEvents } from "./services/events.js"
 import { userEvents } from "./objects/events.js"
 import { nightMode } from "./night_mode.js";
 import { repositoriesMoreInfosToShow } from "./objects/repositories.js";
+import { repositoriesMoreInfosData } from "./repositories.js";
 
 const searchButton = document.getElementById("github-user-name-submit")
 const userInput = document.getElementById("github-user-name")
@@ -24,14 +25,17 @@ async function getUserData (userName) {
     
     const userRepositoriesResponse = await getRepositories(userName)
     const userEventsResponse = await getEvents(userName)
-
     user.setInfo(userNameResponse)
     user.setRepositories(userRepositoriesResponse)
     userEvents.setEvents(userEventsResponse)
+
+    const repositoriesMoreInfos = await repositoriesMoreInfosData(userName)
+    repositoriesMoreInfosToShow.setInfos(repositoriesMoreInfos)
+
     screen.renderUser(user)
     screen.renderRepositories(user.repositories)
     screen.renderEvents(userEvents.events)
-    screen.renderRepositoriesMoreInfos(await repositoriesMoreInfosToShow(userName))
+    screen.renderRepositoriesMoreInfos(repositoriesMoreInfosToShow.repositoriesMoreInfos)
 }
 
 searchButton.addEventListener("click", () => {

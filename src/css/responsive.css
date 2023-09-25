@@ -21,14 +21,11 @@
         flex-direction: column;
     }
 
-    .more-infos .language{
-        max-width: 100%;
+    .more-infos p{
+        text-align: center;
     }
 
-    .more-infos .language:hover{
-        color: initial;
-        background-color: initial;
-        border: initial;
-        padding-inline: initial;
+    .more-infos p:hover{
+        width: 100%;
     }
 }
