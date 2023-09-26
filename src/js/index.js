@@ -49,9 +49,9 @@ searchButton.addEventListener("click", () => {
     userEvents.clearEvents() // para limpar o array com os eventos toda vez que receber um userName
 })
 
-userInput.addEventListener("keypress", (e) => {
-    const key = e.which || e.keyCode    
-    const userName = e.target.value
+userInput.addEventListener("keypress", enter => {
+    const key = enter.which || enter.keyCode    
+    const userName = enter.target.value
     const keyPressed = key === 13
     if(keyPressed && key === 13){
         if(userInput.value.length === 0){
